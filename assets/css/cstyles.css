@@ -301,6 +301,102 @@ img {
   margin-bottom: var(--mb-2);
   margin: 2rem;
 }
+/*==================== User Research ====================*/
+.ur__container{
+  overflow: initial;
+}
+
+.ur_content{
+  padding: 0 1.5rem;
+}
+
+.ur__img{
+  width: 650px;
+  border-radius: .5rem;
+  justify-self: center;
+}
+
+.ur__title{
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-0-5);
+}
+
+.ur__description{
+  margin-bottom: var(--mb-0-75);
+}
+
+.ur__button:hover .button__icon{
+  transform: translateX(.25rem);
+}
+
+.swiper-ur-icon{
+  font-size: 2rem;
+  color: var(--first-color);
+}
+
+.wireframe__container{
+  overflow: initial;
+}
+
+.wireframe_content{
+  padding: 0 1.5rem;
+}
+
+.wireframe__img{
+  width: 650px;
+  border-radius: .5rem;
+  justify-self: center;
+}
+
+.wireframe__title{
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-0-5);
+}
+
+.wireframe__description{
+  margin-bottom: var(--mb-0-75);
+}
+
+.wireframe__button:hover .button__icon{
+  transform: translateX(.25rem);
+}
+
+.swiper-wireframe-icon{
+  font-size: 2rem;
+  color: var(--first-color);
+}
+
+.content {
+  padding: 50px;
+}
+
+.sectionHeading {
+  text-align: center;
+}
+
+.showsNear {
+  padding: 0px 30px 30px 30px;
+}
+
+.cardContainer {
+  text-align: center;
+}
+
+.mirolink a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ilike__container{
+  gap: 1rem;
+  margin-top: 8rem;
+}
+
+.fpm__container{
+  gap: 1rem;
+  margin-top: 8rem;
+}
 
 /*==================== HOME ====================*/
 .home__container{
