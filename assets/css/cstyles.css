@@ -266,7 +266,7 @@ img {
 }
 /*==================== Case Study HOME ====================*/
 .jumbotron {
-  background-image: url(/assets/img/spontourbanner.png);
+  background-image: url(../img/spontourbanner.png);
   background-size: cover;
   background-repeat: no-repeat;
   height: 500px;
