@@ -3,17 +3,27 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-47C1K3ZX91"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-47C1K3ZX91');
+        </script>
         <!--==================== UNICONS ====================-->
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
         <!--==================== SWIPER CSS ====================-->
         <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        
         <!--==================== CSS ====================-->
-        <link rel="stylesheet" href="assets/css/cstyles.css">
+        <link rel="stylesheet" href="assets/css/styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com"> 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
         <link href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@400;500;600&display=swap" rel="stylesheet">
-        <title>Jonathan's ur Website</title>
+        <title>Jonathan's Portfolio Website</title>
     </head>
     <body>
         <!--==================== HEADER ====================-->
@@ -43,8 +53,8 @@
                             </a>
                         </li>
                         <li class="nav__item">
-                            <a href="#ur" class="nav__link">
-                                <i class="uil uil-scenery nav__icon"></i> ur
+                            <a href="#portfolio" class="nav__link">
+                                <i class="uil uil-scenery nav__icon"></i> Portfolio
                             </a>
                         </li>
                         <li class="nav__item">
@@ -66,96 +76,379 @@
             </nav>
         </header>
 
+        <!--==================== MAIN ====================-->
         <main class="main">
-            <!-- Hero Banner -->
-            <section class="Casestudy">
-                <div class="jumbotron SpontourBackground">
-                    <div class="jumboCopy">
-                        <div class="home__scroll">
-                            <a href="#about" class="home__scroll-button button--flex">
-                                <i class="uil uil-mouse-alt home__scroll-mouse"></i>
-                                <span class="home__scroll-name">Scroll Down</span>
-                                <i class="uil uil-arrow-down home__scroll-arrow"></i>
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <div class="home__content grid">
+                        <div class="home__social">
+                            <a href="https://www.linkedin.com/in/jonathan-saliba-5987ba149/" target="_blank" class="home__social-icon">
+                                <i class="uil uil-linkedin-alt"></i>
+                            </a>
+                            <a href="https://www.instagram.com/raiajms/?hl=en" target="_blank" class="home__social-icon">
+                                <i class="uil uil-instagram"></i>
+                            </a>
+                            <a href="https://github.com/JonathanSaliba" target="_blank" class="home__social-icon">
+                                <i class="uil uil-github-alt"></i>
                             </a>
                         </div>
+
+                        <div class="home__img">
+                            <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <mask id="mask0" mask-type="alpha">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                </mask>
+                                <g mask="url(#mask0)">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                    <image class="home__blob-img" x="12" y="18" href="assets/img/perfil.png"/>
+                                </g>
+                            </svg>
+                        </div>
+
+                        <div class="home__data">
+                            <h1 class="home__title">Hi, I am Jonathan</h1>
+                            <h3 class="home__subtitle">UX/UI Designer</h3>
+                            <p class="home__description">I am goal oriented and meticulous, taking a dual thinking approach, that comes from my engineering and creative background.</p>
+                            <a href="#contact" class="button button--flex">
+                                Contact Me <i class="uil uil-message button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="home__scroll">
+                        <a href="#about" class="home__scroll-button button--flex">
+                            <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                            <span class="home__scroll-name">Scroll Down</span>
+                            <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                        </a>
                     </div>
                 </div>
             </section>
 
-            <!--About-->
+            <!--==================== ABOUT ====================-->
             <section class="about section" id="about">
-                <h2 class="section__title">About Spontour</h2>
-                <span class="section__subtitle">Introduction</span>
+                <h2 class="section__title">About Me</h2>
+                <span class="section__subtitle">My Introduction</span>
                 <div class="about__container container grid">
-                    <img src="assets/img/SpontourLogo.png" alt="" class="about__img">
+                    <img src="assets/img/about.png" alt="" class="about__img">
 
                     <div class="about__data">
-                        <p class="about__description">A travel planning app that helps elevate the pain points involved with planning a trip, either alone or with a group of friends through custom/curated experiences based on the individuals'  or groups' interests. The projected consisted the use of the following tools and methodologies, User Research (Interviews + Surveys) & Analysis, Persona Creation, User Experience Design (UI/UX), Wireframing, Prototyping, Remote User Testing, Figma, Marvel, and InVision.</p>
+                        <p class="about__description">UX/UI designer with extensive knowledge and passion for design, working as a freelancer, delivering quality work. I enjoy finding solutions and connecting with people to create a memorable experience.</p>
 
                         <div class="about__info">
                             <div>
-                                <span class="about__info-title">01+</span>
-                                <span class="about__info-name">Team <br> Members  </span>
+                                <span class="about__info-title">03+</span>
+                                <span class="about__info-name">Years <br> Experience </span>
                             </div>
 
                             <div>
-                                <span class="about__info-title">4 Weeks</span>
-                                <span class="about__info-name">Project<br> Timeline </span>
+                                <span class="about__info-title">6+</span>
+                                <span class="about__info-name">Completed<br> Project </span>
                             </div>
 
                             <div>
-                                <span class="about__info-title">04+</span>
-                                <span class="about__info-name">Project <br> Phases </span>
+                                <span class="about__info-title">03+</span>
+                                <span class="about__info-name">Companies <br> Worked </span>
                             </div>
                         </div>
-                        <div class="home__scroll">
-                            <a href="#research" class="home__scroll-button button--flex">
-                                <i class="uil uil-mouse-alt home__scroll-mouse"></i>
-                                <span class="home__scroll-name">Scroll Down</span>
-                                <i class="uil uil-arrow-down home__scroll-arrow"></i>
+
+                        <div class="about__buttons">
+                            <a download="" href="assets/pdf/UX:UI Resume.pdf" class="button button--flex">
+                                Download CV<i class="uil uil-download-alt button__icon"></i>
                             </a>
                         </div>
-                        
                     </div>
                 </div>
             </section>
 
-            <!-- Research & Defination -->
-            <section class="services section" id="research">
-                <h2 class="section__title">Research & Defination</h2>
-                <span class="section__subtitle">Introduction</span>
+            <!--==================== SKILLS ====================-->
+            <section class="skills section" id="skills">
+                <h2 class="section__title">Skills</h2>
+                <span class="section__subtitle">My Techincal Level</span>
+
+                <div class="skills__container container grid">
+                    <!--==================== SKILLS 1 ====================-->
+                    <div class="skills__content skills__open">
+                        <div class="skills__header">
+                            <i class="uil uil-brackets-curly skills__icon"></i>
+
+                            <div>
+                                <h1 class="skills__title">Frontend Development</h1>
+                                <span class="skills__subtitle">More than 2 years</span>
+                            </div>
+
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">HTML</h3>
+                                    <span class="skills__number">Conversational 90%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__html"></span>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">CSS</h3>
+                                        <span class="skills__number">Conversational 80%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__css"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">JavaScript</h3>
+                                        <span class="skills__number">Conversational 60%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__js"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Bootstrap</h3>
+                                        <span class="skills__number">Conversational 90%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__bootstrap"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <!--==================== SKILLS 2 ====================-->
+                        <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            <i class="uil uil-swatchbook skills__icon"></i>
+
+                            <div>
+                                <h1 class="skills__title">Designer</h1>
+                                <span class="skills__subtitle">More than 5 years</span>
+                            </div>
+
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Figma</h3>
+                                    <span class="skills__number">85%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__figma"></span>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">AdobeXd</h3>
+                                        <span class="skills__number">70%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__adobexd"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Invision</h3>
+                                        <span class="skills__number">60%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__invision"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Miro</h3>
+                                        <span class="skills__number">90%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__miro"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== QUALIFICATION ====================-->
+            <section class="qualification section">
+                <h2 class="section__title">Qualification</h2>
+                <span class="section__subtitle">My Personal Journey</span>
+
+                <div class="qualification__contianer container">
+                    <div class="qualification__tabs">
+                        <div class="qualification__button button--flex qualification__active" data-target='#education'>
+                            <i class="uil uil-graduation-cap qualification__icon"></i>
+                            Education
+                        </div>
+
+                        <div class="qualification__button button--flex" data-target="#work">
+                            <i class="uil uil-briefcase-alt qualification__icon"></i>
+                            Work
+                        </div>
+                    </div>
+
+                    <div class="qualification__sections">
+                          <!--==================== QUALIFICATION Content 1 ====================-->
+                        <div class="qualification__content qualification__active" data-content id="education">
+                            <!--==================== QUALIFICATION 1 ====================-->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Automotive Engineering</h3>
+                                    <span class="qualification__subtitle">OntarioTech University</span>
+                                    <div class="qualification__calender">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2015 - 2019
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+
+                             <!--==================== QUALIFICATION 2 ====================-->
+                             <div class="qualification__data">
+                                 <div></div>
+                                 <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+
+                                <div>
+                                    <h3 class="qualification__title">Mechanical Engineer Intern</h3>
+                                    <span class="qualification__subtitle">IMAX Corporation</span>
+                                    <div class="qualification__calender">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2018 - 2018
+                                    </div>
+                                </div>
+                            </div>
+
+                             <!--==================== QUALIFICATION 3 ====================-->
+                             <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">CAPSTONE - Project Manager & Designer </h3>
+                                    <span class="qualification__subtitle">OntarioTech University</span>
+                                    <div class="qualification__calender">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2018 - 2019
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+
+                             <!--==================== QUALIFICATION 4 ====================-->
+                             <div class="qualification__data">
+                                 <div></div>
+
+                                 <div>
+                                    <span class="qualification__rounder"></span>
+                                    <!-- <span class="qualification__line"></span> -->
+                                </div>
+
+                                <div>
+                                    <h3 class="qualification__title">UX/UI Design</h3>
+                                    <span class="qualification__subtitle">University of Toronto SCS</span>
+                                    <div class="qualification__calender">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2021 - 2022
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                          <!--==================== QUALIFICATION Content 2 ====================-->
+                          <div class="qualification__content" data-content id="work">
+                            <!--==================== QUALIFICATION 1 ====================-->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Mechanical Engineer Intern</h3>
+                                    <span class="qualification__subtitle">IMax Corporation</span>
+                                    <div class="qualification__calender">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2018 - 2018
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+
+                             <!--==================== QUALIFICATION 2 ====================-->
+                             <div class="qualification__data">
+                                 <div></div>
+                                 <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+
+                                <div>
+                                    <h3 class="qualification__title">Global Support Engineer</h3>
+                                    <span class="qualification__subtitle">Structo 3D</span>
+                                    <div class="qualification__calender">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2019 - 2021
+                                    </div>
+                                </div>
+                            </div>
+
+                             <!--==================== QUALIFICATION 3 ====================-->
+                             <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">UX/UI Freelancer</h3>
+                                    <span class="qualification__subtitle">RaiaJMS</span>
+                                    <div class="qualification__calender">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2021 - Current
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <!-- <span class="qualification__line"></span> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== SERVICES ====================-->
+            <section class="services section" id="services">
+                <h2 class="section__title">Services</h2>
+                <span class="section__subtitle">What I Offer</span>
 
                 <div class="services__container container grid">
-                    <!--==================== Research 1 ====================-->
+                    <!--==================== SERVICES 1 ====================-->
                     <div class="services__content">
                         <div>
-                            <i class="uil uil-puzzle-piece services__icon"></i>
-                            <h3 class="services__title">The <br> Problem</h3>
-                        </div>
-                        <span class="button button--flex button--small button--link services__button">
-                            View More
-                            <i class="uil uil-arrow-right button__icon"></i>
-                        </span>
-                        <!--Modals-->
-                        <div class="services__modal">
-                            <div class="services__modal-content">
-                                <h4 class="services__modal-title">Problem <br> Statement </h4>
-                                <i class="uil uil-times services__modal-close"></i>
-
-                                <ul class="services__modal-services grid">
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>From meticulous planners to spontaneous travelers, all has been halted due to the growing Covid-19 restrictions. The need to get away, plan trips and find enjoyment grows by the second. However, the current methods available to plan a trip can be cumbersome, long,  faced with choice fatigue or lack of good last minute getaway recommendations.</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!--==================== Research 2 ====================-->
-                    <div class="services__content">
-                        <div>
-                            <i class="uil uil-focus-target services__icon"></i>
-                            <h3 class="services__title">Solution <br> Targets</h3>
+                            <i class="uil uil-web-grid services__icon"></i>
+                            <h3 class="services__title">UX/UI <br> Designer</h3>
                         </div>
                         <span class="button button--flex button--small button--link services__button">
                             View More
@@ -164,36 +457,73 @@
 
                         <div class="services__modal">
                             <div class="services__modal-content">
-                                <h4 class="services__modal-title">Solution <br> Goals</h4>
+                                <h4 class="services__modal-title">UX/UI <br> Designer</h4>
                                 <i class="uil uil-times services__modal-close"></i>
 
                                 <ul class="services__modal-services grid">
                                     <li class="services__modal-service">
                                         <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>a better travel planning tool needs to be made to aid various travel types.</p>
+                                        <p>I develop the user interface.</p>
                                     </li>
                                     <li class="services__modal-service">
                                         <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Provide better recommended experiences for an individual or group of friends.</p>
+                                        <p>Web page development.</p>
                                     </li>
                                     <li class="services__modal-service">
                                         <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Provide a better planning experience for different kinds of travelers so they can get the most out of their trip.</p>
+                                        <p>I create Ux element interactions.</p>
                                     </li>
                                     <li class="services__modal-service">
                                         <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Helps reduce the stress and fustration from managing a trip</p>
+                                        <p>I position your company brand.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--==================== SERVICES 2 ====================-->
+                    <div class="services__content">
+                        <div>
+                            <i class="uil uil-arrow services__icon"></i>
+                            <h3 class="services__title">Frontend <br> Developer</h3>
+                        </div>
+                        <span class="button button--flex button--small button--link services__button">
+                            View More
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </span>
+
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <h4 class="services__modal-title">Frontend <br> Developer</h4>
+                                <i class="uil uil-times services__modal-close"></i>
+
+                                <ul class="services__modal-services grid">
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I develop the user interface.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Web page development.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I create Ux element interactions.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I position your company brand.</p>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
 
-                    <!--==================== Research 3 ====================-->
+                    <!--==================== SERVICES 3 ====================-->
                     <div class="services__content">
                         <div>
                             <i class="uil uil-pen services__icon"></i>
-                            <h3 class="services__title">How Data <br> Was Collected</h3>
+                            <h3 class="services__title">Branding <br> Designer</h3>
                         </div>
                         <span class="button button--flex button--small button--link services__button">
                             View More
@@ -202,21 +532,25 @@
 
                         <div class="services__modal">
                             <div class="services__modal-content">
-                                <h4 class="services__modal-title">Project <br> Stats</h4>
+                                <h4 class="services__modal-title">Branding <br> Designer</h4>
                                 <i class="uil uil-times services__modal-close"></i>
 
                                 <ul class="services__modal-services grid">
                                     <li class="services__modal-service">
                                         <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>5 One-on-One Virtual interviews</p>
+                                        <p>I develop the user interface.</p>
                                     </li>
                                     <li class="services__modal-service">
                                         <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>1 User Survey</p>
+                                        <p>Web page development.</p>
                                     </li>
                                     <li class="services__modal-service">
                                         <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>27 Survey Participants</p>
+                                        <p>I create Ux element interactions.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>I position your company brand.</p>
                                     </li>
                                 </ul>
                             </div>
@@ -225,473 +559,21 @@
                 </div>
             </section>
 
-            <!-- User Research-->
-            <section class="ur section" id="ur">
-                <h2 class="section__title">User Research</h2>
-                <span class="section__subtitle">Survey</span>
-                
-                <div class="ur__container container swiper mySwiper">
-                    <div class="swiper-wrapper">
-                        <!--==================== ur 1 ====================-->
-                        <div class="ur__content grid swiper-slide">
-                            <img src="assets/img/survey1.png" alt="" class="ur__img">
-
-                            <div class="ur__data">
-                                <h3 class="ur__title">Title 1</h3>
-                                <p class="ur__description">Descritive text</p>
-                            </div>
-                        </div>
-
-                        <!--==================== ur 2 ====================-->
-                        <div class="ur__content grid swiper-slide">
-                            <img src="assets/img/survey2.png" alt="" class="ur__img">
-
-                            <div class="ur__data">
-                                <h3 class="ur__title">Title 2</h3>
-                                <p class="ur__description">Descritive text</p>
-                            </div>
-                        </div>
-
-                        <!--==================== ur 3 ====================-->
-                        <div class="ur__content grid swiper-slide">
-                            <img src="assets/img/survey3.png" alt="" class="ur__img">
-
-                            <div class="ur__data">
-                                <h3 class="ur__title">Title 3</h3>
-                                <p class="ur__description">Descritive text</p>
-                            </div>
-                        </div>
-
-                        <!--==================== ur 4 ====================-->
-                        <div class="ur__content grid swiper-slide">
-                            <img src="assets/img/survey4.png" alt="" class="ur__img">
-
-                            <div class="ur__data">
-                                <h3 class="ur__title">Title 4</h3>
-                                <p class="ur__description">Descritive text</p>
-                            </div>
-                        </div>
-
-                        <!--==================== ur 5 ====================-->
-                        <div class="ur__content grid swiper-slide">
-                            <img src="assets/img/survey5.png" alt="" class="ur__img">
-
-                            <div class="ur__data">
-                                <h3 class="ur__title">Title 5</h3>
-                                <p class="ur__description">Descritive text</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Arrows -->
-                    <div class="swiper-button-next">
-                        <i class="uil uil-angle-right-b swiper-ur-icon"></i>
-                    </div>
-                    <div class="swiper-button-prev">
-                        <i class="uil uil-angle-left-b swiper-ur-icon"></i>
-                    </div>
-
-                    <!-- Pagination -->
-                    <div class="swiper-pagination"></div>
-                </div>
-                <div class="userinsight__container container grid">
-                    <h2 class="section__title">Interview Insights</h2>
-                    <div class="text-center">
-                        <img src="assets/img/uinsights.png" class="rounded userI__img" alt="...">
-                        <p>Descritive Text</p>
-                    </div>
-                </div> 
-
-                <div class="persona__container container grid">
-                    <h2 class="section__title">Personas</h2>
-                </div>
-                <!-- Cards -->
-    <div class="container-fluid content">
-        <div class="row showsNear">
-          <!-- Card 1 -->
-          <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
-            <div class="card">
-              <img src="assets/img/protopersona.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Proto-Persona</h5>
-                <p class="card-text">Descriptive Text</p>
-              </div>
-            </div>
-          </div>
-          <!-- End card 1 -->
-  
-          <!-- Card 2 -->
-          <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
-            <div class="card">
-              <img src="assets/img/affinitydiagram.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Affinity Diagram</h5>
-                <p class="card-text">Descriptive Text</p>
-              </div>
-            </div>
-          </div>
-          <!-- End card 2 -->
-  
-          <!-- Card 3 -->
-          <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
-            <div class="card">
-              <img src="assets/img/userpersona.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">User Persona</h5>
-                <p class="card-text">Descriptive Text</p>
-              </div>
-            </div>
-          </div>
-          <!-- End card 3 -->
-          <div class="mirolink">
-              <a href="https://miro.com/app/board/uXjVOVvPt3w=/?share_link_id=792838776840"> Miro Board</a>
-          </div>
-        </div>
-      </div>
-      <!-- End cards -->
-            </section>
-
-            <!-- Ideation -->
-            <section class="ideation section" id="ideation">
-                <h2 class="section__title">Ideation</h2>
-                <span class="section__subtitle">User Insight iteraion</span>
-                <!-- Cards -->
-    <div class="container-fluid content">
-        <div class="row showsNear">
-          <!-- Card 1 -->
-          <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Iteration 1</h5>
-                <p class="card-text">Alex, a current student, needs a better way to plan her activities when she travels aboard with her friends because she wants to enjoy herself and not have to stress about all the details.</p>
-              </div>
-            </div>
-          </div>
-          <!-- End card 1 -->
-  
-          <!-- Card 2 -->
-          <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Iteration 2</h5>
-                <p class="card-text">Alex, a current life science student at University of Toronto needs a better way to coordinate and plan different activities when she travels aboard with friends because she wants to be able to enjoy herself with them while avoiding the stresses of micromanaging and coordinating all the different interests and travel styles they have.</p>
-              </div>
-            </div>
-          </div>
-          <!-- End card 2 -->
-  
-          <!-- Card 3 -->
-          <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Iteration 3</h5>
-                <p class="card-text">Alex, a current life science student at University of Toronto is always looking for her next adventure with friends but finds it stressful to coordinate all the different activities based on everyone's interests, and finds herself often micromanaging and compromising with everyone. She needs a better way to plan different activities when she travels because she wants to be able to enjoy herself with her friends while avoiding the stress of micromanaging the details of the trip.</p>
-              </div>
-            </div>
-          </div>
-          <!-- End card 3 -->
-
-      <!-- Cards -->
-    <div class="container-fluid content">
-        <h2 class="section__title">Ideation</h2>
-        <span class="section__subtitle">Problem Statement Iteration</span>
-        <div class="row showsNear">
-          <!-- Card 1 -->
-          <div class="cardContainer col-lg-6 col-md-6 col-sm-12">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Iteration 1</h5>
-                <p class="card-text">It is difficult for travelers to coordinate with fellow travelers, design itineraries, and research/find the best activities while considering everyone's interests. Whether you’re a meticulous planner or spontaneous traveler, the planning process is riddled with stress and hard work when managing a group trip.</p>
-              </div>
-            </div>
-          </div>
-          <!-- End card 1 -->
-  
-          <!-- Card 2 -->
-          <div class="cardContainer col-lg-6 col-md-6 col-sm-12">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Iteration 2</h5>
-                <p class="card-text">It is difficult for travelers to manage and coordinate the complexities of designing an itinerary, researching/finding the best activities for a group of people while considering the different interests and priorities they may have. Whether you’re a meticulous planner or spontaneous traveler, the planning process is riddled with stress and hard work when managing a group trip.</p>
-              </div>
-            </div>
-          </div>
-          <!-- End card 2 -->
-        </div>
-      </div>
-      <!-- End cards -->
-
-      <div class="userinsight__container container grid">
-        <h2 class="section__title">Storyboard</h2>
-        <div class="text-center">
-            <img src="assets/img/storyboard.png" class="rounded userI__img" alt="...">
-        </div>
-    </div> 
-            </section>
-
-            <section class="about section" id="about">
-                <h2 class="section__title">Spontour</h2>
-                <span class="section__subtitle">Value Proposition</span>
-                <div class="about__container container grid">
-                    <img src="assets/img/SpontourLogo.png" alt="" class="about__img">
-
-                    <div class="about__data">
-                        <p class="about__description">
-                            At Spontour we believe in delivering a curated experience based on your interests.
-                            Let us take the stress out of planning so you can focus on being in the moment and sharing in those wonderful memories with your friends.
-                            Connect, Explore & Share.
-                        </p>
-                        <div class="home__scroll">
-                            <a href="#" class="home__scroll-button button--flex">
-                                <i class="uil uil-mouse-alt home__scroll-mouse"></i>
-                                <span class="home__scroll-name">Scroll Down</span>
-                                <i class="uil uil-arrow-down home__scroll-arrow"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="ilike__container container grid">
-                    <h2 class="section__title">I Like, I Wish, What IF?</h2>
-                    <div class="text-center">
-                        <img src="assets/img/ilike.png" class="rounded ilike__img" alt="...">
-                    </div>
-
-                    <div class="services__container container grid">
-                        <!--==================== Tab 1 ====================-->
-                        <div class="services__content">
-                            <div>
-                                <i class="uil uil-puzzle-piece services__icon"></i>
-                                <h3 class="services__title">The <br> Problem</h3>
-                            </div>
-                            <span class="button button--flex button--small button--link services__button">
-                                View More
-                                <i class="uil uil-arrow-right button__icon"></i>
-                            </span>
-                            <!--Modals-->
-                            <div class="services__modal">
-                                <div class="services__modal-content">
-                                    <h4 class="services__modal-title">Determining <br> Scope </h4>
-                                    <i class="uil uil-times services__modal-close"></i>
-    
-                                    <ul class="services__modal-services grid">
-                                        <li class="services__modal-service">
-                                            <i class="uil uil-check-circle services__modal-icon"></i>
-                                            <p>Item 1</p>
-                                        </li>
-                                    </ul>
-
-                                    <ul class="services__modal-services grid">
-                                        <li class="services__modal-service">
-                                            <i class="uil uil-check-circle services__modal-icon"></i>
-                                            <p>Item 2</p>
-                                        </li>
-                                    </ul>
-
-                                    <ul class="services__modal-services grid">
-                                        <li class="services__modal-service">
-                                            <i class="uil uil-check-circle services__modal-icon"></i>
-                                            <p>Item 3</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <!--==================== Tab 2 ====================-->
-                        <div class="services__content">
-                            <div>
-                                <i class="uil uil-focus-target services__icon"></i>
-                                <h3 class="services__title">Solution <br> Targets</h3>
-                            </div>
-                            <span class="button button--flex button--small button--link services__button">
-                                View More
-                                <i class="uil uil-arrow-right button__icon"></i>
-                            </span>
-    
-                            <div class="services__modal">
-                                <div class="services__modal-content">
-                                    <h4 class="services__modal-title">Solution <br> Goals</h4>
-                                    <i class="uil uil-times services__modal-close"></i>
-    
-                                    <ul class="services__modal-services grid">
-                                        <li class="services__modal-service">
-                                            <i class="uil uil-check-circle services__modal-icon"></i>
-                                            <p>Item 1</p>
-                                        </li>
-                                        <li class="services__modal-service">
-                                            <i class="uil uil-check-circle services__modal-icon"></i>
-                                            <p>Item 2</p>
-                                        </li>
-                                        <li class="services__modal-service">
-                                            <i class="uil uil-check-circle services__modal-icon"></i>
-                                            <p>Item 3</p>
-                                        </li>
-                                        <li class="services__modal-service">
-                                            <i class="uil uil-check-circle services__modal-icon"></i>
-                                            <p>Helps reduce the stress and fustration from managing a trip</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-    
-                        <!--==================== Tab 3 ====================-->
-                        <div class="services__content">
-                            <div>
-                                <i class="uil uil-pen services__icon"></i>
-                                <h3 class="services__title">How Data <br> Was Determined</h3>
-                            </div>
-                            <span class="button button--flex button--small button--link services__button">
-                                View More
-                                <i class="uil uil-arrow-right button__icon"></i>
-                            </span>
-    
-                            <div class="services__modal">
-                                <div class="services__modal-content">
-                                    <h4 class="services__modal-title">Project <br> Stats</h4>
-                                    <i class="uil uil-times services__modal-close"></i>
-    
-                                    <ul class="services__modal-services grid">
-                                        <li class="services__modal-service">
-                                            <i class="uil uil-check-circle services__modal-icon"></i>
-                                            <p>Item 1</p>
-                                        </li>
-                                        <li class="services__modal-service">
-                                            <i class="uil uil-check-circle services__modal-icon"></i>
-                                            <p>Item 2</p>
-                                        </li>
-                                        <li class="services__modal-service">
-                                            <i class="uil uil-check-circle services__modal-icon"></i>
-                                            <p>item 3</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>                  
-                </div>
-                <div class="fpm__container container grid">
-                    <h2 class="section__title">Feature Priorization Matrix</h2>
-                    <div class="text-center">
-                        <img src="assets/img/fpm.png" class="rounded userI__img" alt="...">
-                </div>
-            </section>
-            
-            <!-- Prototype & Testing -->
-            <section class="prototype section" id="prototype">
-                <h2 class="section__title">Prototype & Testing</h2>
-                <span class="section__subtitle">Competitor Analysis</span>
-                <div class="about__container container grid">
-                    <a href="https://docs.google.com/spreadsheets/d/1n0lldB9yS-VxUF1i1LrZNTy8Q22W5LUL/edit?usp=sharing&ouid=102862992746104437210&rtpof=true&sd=true">
-                        <img src="assets/img/SpontourLogo.png" alt="" class="about__img">
-                    </a>
-
-                    <div class="about__data">
-                        <p class="about__description">
-                            Clicking the following image provides an in-depth view to the competitor analysis matrix. Through the Competitor analysis I was able to weight the pros and cons different direct and & indirect competiors to help narrow in on the features that provide a good app experience.
-                        </p>
-                        <div class="home__scroll">
-                            <a href="#wireframes" class="home__scroll-button button--flex">
-                                <i class="uil uil-mouse-alt home__scroll-mouse"></i>
-                                <span class="home__scroll-name">Scroll Down</span>
-                                <i class="uil uil-arrow-down home__scroll-arrow"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="wireframes section" id="wireframes">
-                    <h2 class="section__title">Prototype & Testing</h2>
-                    <span class="section__subtitle">Wireframes</span> 
-                    <div class="wireframe__container container swiper mySwiper">
-                        <div class="swiper-wrapper">
-                            <!--==================== PORTFOLIO 1 ====================-->
-                            <div class="wireframe__content grid swiper-slide">
-                                <img src="assets/img/proto1.png" alt="" class="wireframe__img">
-    
-                                <div class="wireframe__data">
-                                    <a href="https://invis.io/6V129N7RN9JK#/463183339_Splash" class="button button--flex button--small portfolio__button">
-                                        Demo
-                                        <i class="uil uil-arrow-right button__icon"></i>
-                                    </a>
-                                </div>
-                            </div>
-    
-                            <!--==================== PORTFOLIO 2 ====================-->
-                            <div class="wireframe__content grid swiper-slide">
-                                <img src="assets/img/proto2.png" alt="" class="wireframe__img">
-    
-                                <div class="wireframe__data">
-                                    <a href="https://invis.io/6V129N7RN9JK#/463183339_Splash" class="button button--flex button--small portfolio__button">
-                                        Demo
-                                        <i class="uil uil-arrow-right button__icon"></i>
-                                    </a>
-                                </div>
-                            </div>
-    
-                            <!--==================== PORTFOLIO 3 ====================-->
-                            <div class="wireframe__content grid swiper-slide">
-                                <img src="assets/img/proto3.png" alt="" class="wireframe__img">
-    
-                                <div class="wireframe__data">
-                                    <a href="https://invis.io/6V129N7RN9JK#/463183339_Splash" class="button button--flex button--small portfolio__button">
-                                        Demo
-                                        <i class="uil uil-arrow-right button__icon"></i>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <!--==================== PORTFOLIO 4 ====================-->
-                            <div class="wireframe__content grid swiper-slide">
-                                <img src="assets/img/proto4.png" alt="" class="wireframe__img">
-    
-                                <div class="wireframe__data">
-                                    <a href="https://invis.io/6V129N7RN9JK#/463183339_Splash" class="button button--flex button--small portfolio__button">
-                                        Demo
-                                        <i class="uil uil-arrow-right button__icon"></i>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <!--==================== PORTFOLIO 5 ====================-->
-                            <div class="wireframe__content grid swiper-slide">
-                                <img src="assets/img/proto5.png" alt="" class="wireframe__img">
-    
-                                <div class="wireframe__data">
-                                    <a href="https://invis.io/6V129N7RN9JK#/463183339_Splash" class="button button--flex button--small portfolio__button">
-                                        Demo
-                                        <i class="uil uil-arrow-right button__icon"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-    
-                        <!-- Arrows -->
-                        <div class="swiper-button-next">
-                            <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
-                        </div>
-                        <div class="swiper-button-prev">
-                            <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
-                        </div>
-    
-                        <!-- Pagination -->
-                        <div class="swiper-pagination"></div>
-                    </div>
-            </section>
-
+            <!--==================== PORTFOLIO ====================-->
             <section class="portfolio section" id="portfolio">
-                <h2 class="section__title">ProtoType</h2>
-                <span class="section__subtitle">Digtial Wireframe</span>
+                <h2 class="section__title">Portfolio</h2>
+                <span class="section__subtitle">Most Recent Work</span>
 
                 <div class="portfolio__container container swiper mySwiper">
                     <div class="swiper-wrapper">
                         <!--==================== PORTFOLIO 1 ====================-->
                         <div class="portfolio__content grid swiper-slide">
-                            <img src="assets/img/digital1.png" alt="" class="portfolio__img">
+                            <img src="assets/img/ASLBuddyLogo.png" alt="" class="portfolio__img">
 
                             <div class="portfolio__data">
-                                <a href="https://www.figma.com/proto/rnXiUNShl0urT148FWUJzI/Spontour-Wireframe?node-id=19%3A2383&scaling=scale-down&page-id=19%3A2355&starting-point-node-id=19%3A2383" class="button button--flex button--small portfolio__button">
+                                <h3 class="portfolio__title">ASL Buddy</h3>
+                                <p class="portfolio__description">A gamified learning app that allows you to engage in daily challenges and was designed with the intent to create a personal learning experience suitable for users with busy lifestyles through unique features and custom learning plans.</p>
+                                <a href="#" class="button button--flex button--small portfolio__button">
                                     Demo
                                     <i class="uil uil-arrow-right button__icon"></i>
                                 </a>
@@ -700,10 +582,12 @@
 
                         <!--==================== PORTFOLIO 2 ====================-->
                         <div class="portfolio__content grid swiper-slide">
-                            <img src="assets/img/digital2.png" alt="" class="portfolio__img">
+                            <img src="assets/img/Khyberlogo.png" alt="" class="portfolio__img">
 
                             <div class="portfolio__data">
-                                <a href="https://www.figma.com/proto/rnXiUNShl0urT148FWUJzI/Spontour-Wireframe?node-id=19%3A2383&scaling=scale-down&page-id=19%3A2355&starting-point-node-id=19%3A2383" class="button button--flex button--small portfolio__button">
+                                <h3 class="portfolio__title">The Khyber</h3>
+                                <p class="portfolio__description">The goal of this project was to redesign the The Khyber website with a focus on the information architecture improvements, creating an extended gallery experience as well as the mobile channel experience design.</p>
+                                <a href="#" class="button button--flex button--small portfolio__button">
                                     Demo
                                     <i class="uil uil-arrow-right button__icon"></i>
                                 </a>
@@ -712,10 +596,12 @@
 
                         <!--==================== PORTFOLIO 3 ====================-->
                         <div class="portfolio__content grid swiper-slide">
-                            <img src="assets/img/digital3.png" alt="" class="portfolio__img">
+                            <img src="assets/img/SpontourLogo.png" alt="" class="portfolio__img">
 
                             <div class="portfolio__data">
-                                <a href="https://www.figma.com/proto/rnXiUNShl0urT148FWUJzI/Spontour-Wireframe?node-id=19%3A2383&scaling=scale-down&page-id=19%3A2355&starting-point-node-id=19%3A2383" class="button button--flex button--small portfolio__button">
+                                <h3 class="portfolio__title">Spontour</h3>
+                                <p class="portfolio__description">The aim of the project was to design a travel planning app that helps elevate the pain points involved with planning a trip, either alone or with a group of friends through custom/curated experiences based on the individuals' or groups' interests.</p>
+                                <a href="cindex.html" class="button button--flex button--small portfolio__button">
                                     Demo
                                     <i class="uil uil-arrow-right button__icon"></i>
                                 </a>
@@ -730,115 +616,232 @@
                     <div class="swiper-button-prev">
                         <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
                     </div>
+
+                    <!-- Pagination -->
+                    <div class="swiper-pagination"></div>
+
                 </div>
-                <div class="row showsNear">
-                    <!-- Card 1 -->
-                    <div class="cardContainer col-lg-12 col-md-12 col-sm-12">
-                      <div class="card">
-                        <div class="card-body">
-                          <h5 class="card-title">Iterations Made Based On User Test</h5>
-                          <p class="card-text">
-                            The Iterations made include the following:<br>
-                            Added descriptive text and notifications <br>
-                            Added confirm password box in sign-up page <br>
-                            Added “Next” text beside Navigation arrows <br>
-                            Added Sign in/ Sign-out button on home screen <br>
-                            Changed “Curate a trip” button to “We build a trip” <br>
-                            Added a confirm button on itinerary details page
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- End card 1 -->
-                <!-- End cards -->
             </section>
-            
+
+            <!--==================== PROJECT IN MIND ====================-->
             <section class="project section">
                 <div class="project__bg">
                     <div class="project__container container grid">
                         <div class="project__data">
-                            <h2 class="project__title">IOS Prototype Video</h2>
-                            <a href="https://www.figma.com/proto/rnXiUNShl0urT148FWUJzI/Spontour-Wireframe?node-id=2%3A44&scaling=scale-down&page-id=0%3A1&starting-point-node-id=2%3A44" class="button button--flex button--white">
-                                Demo
-                                <i class="uil uil-arrow-right button__icon"></i>
+                            <h2 class="project__title">You Have a New Project</h2>
+                            <p class="project__description">Contact me now and get a 30% discount on your new project.</p>
+                            <a href="#contact" class="button button--flex button--white">
+                                Contact Me
+                                <i class="uil uil-message project__icon button__icon"></i>
                             </a>
                         </div>
 
-                        <video alt="" class="project__img" controls> 
-                            <source src="assets/img/SpontourIOSPrototype.mov"> 
-                        </video>
+                        <img src="assets/img/project3.png" alt="" class="project__img">
                     </div>
                 </div>
             </section>
 
-            <!-- Conclusion -->
-            <section>
-                
+            <!--==================== TESTIMONIAL ====================-->
+            <section class="testimonial section">
+                <h2 class="section__title">Testimonial</h2>
+                <span class="section__subtitle">My Client Saying</span>
+
+                <div class="testimonial__container container swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <!--==================== TESTIMONIAL 1 ====================-->
+                        <div class="testimonial__content swiper-slide">
+                            <div class="testimonial__data">
+                                <div class="testimonial__header">
+                                    <img src="assets/img/logo.jpeg" alt="" class="testimonial__img">
+
+                                    <div>
+                                        <h3 class="testimonial__name">Jane Doe</h3>
+                                        <span class="testimonial__client">Client</span>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                </div>
+                            </div>
+
+                            <p class="testimonial__description">TBD</p>
+                        </div>
+
+                        <!--==================== TESTIMONIAL 2 ====================-->
+                        <div class="testimonial__content swiper-slide">
+                            <div class="testimonial__data">
+                                <div class="testimonial__header">
+                                    <img src="assets/img/logo.jpeg" alt="" class="testimonial__img">
+
+                                    <div>
+                                        <h3 class="testimonial__name">John Doe</h3>
+                                        <span class="testimonial__client">Client</span>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                </div>
+                            </div>
+
+                            <p class="testimonial__description">TBD</p>
+                        </div>
+
+                        <!--==================== TESTIMONIAL 3 ====================-->
+                        <div class="testimonial__content swiper-slide">
+                            <div class="testimonial__data">
+                                <div class="testimonial__header">
+                                    <img src="assets/img/logo.jpeg" alt="" class="testimonial__img">
+
+                                    <div>
+                                        <h3 class="testimonial__name">Jane Doe</h3>
+                                        <span class="testimonial__client">Client</span>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                </div>
+                            </div>
+
+                            <p class="testimonial__description">TBD</p>
+                        </div>
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="swiper-pagination swiper-pagination-testimonial"></div>
+                </div>
             </section>
 
+            <!--==================== CONTACT ME ====================-->
+            <section class="contact section" id="contactme">
+                <h2 class="section__title">Contact Me</h2>
+                <span class="section__subtitle">Get In Touch</span>
+
+                <div class="contact__container container grid">
+                    <div>
+                        <div class="contact__information">
+                            <i class="uil uil-phone contact__icon"></i>
+
+                            <div>
+                                <h3 class="contact__title">Call Me</h3>
+                                <span class="contact__subtitle">999-999-999</span>
+                            </div>
+                        </div>
+
+                        <div class="contact__information">
+                            <i class="uil uil-envelope contact__icon"></i>
+
+                            <div>
+                                <h3 class="contact__title">Email</h3>
+                                <span class="contact__subtitle">firstname.lastname@email.com</span>
+                            </div>
+                        </div>
+
+                        <div class="contact__information">
+                            <i class="uil uil-map-marker contact__icon"></i>
+
+                            <div>
+                                <h3 class="contact__title">Location</h3>
+                                <span class="contact__subtitle">Canada - Remote</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form action="" class="contact__form grid">
+                        <div class="contact__inputs grid">
+                            <div class="contact__content">
+                                <label for="" class="contact__label">Name</label>
+                                <input type="text" class="contact__input">
+                            </div>
+
+                            <div class="contact__content">
+                                <label for="" class="contact__label">Email</label>
+                                <input type="email" class="contact__input">
+                            </div>
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Project</label>
+                            <input type="text" class="contact__input">
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Message</label>
+                            <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                        </div>
+
+                        <div>
+                            <a href="#" class="button button--flex">
+                                Send Message
+                                <i class="uil uil-message button__icon"></i>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </section>
         </main>
 
-         <!--==================== FOOTER ====================-->
-         <footer class="footer">
-            <div class="footer__bg">
-                <div class="footer__container container grid">
-                    <div>
-                        <h1 class="footer__title">Jonathan</h1>
-                        <span class="footer__subtitle">UX/UI Designer</span>
-                    </div>
-   
-                    <ul class="footer__links">
-                        <li>
-                            <a href="#services" class="footer__link">Services</a>
-                        </li>
-                        <li>
-                           <a href="#ur" class="footer__link">ur</a>
-                       </li>
-                       <li>
-                           <a href="#contact" class="footer__link">Contact Me</a>
-                       </li>
-                    </ul>
-   
-                    <div class="footer__socials">
-                        <a href="https://www.instagram.com/raiajms/?hl=en" target ="_blank" class="footer__social">
-                           <i class="uil uil-instagram"></i>
-                        </a>
-   
-                        <a href="https://www.linkedin.com/in/jonathan-saliba-5987ba149/" target ="_blank" class="footer__social">
-                           <i class="uil uil-linkedin"></i>
-                        </a>
-   
-                        <a href="https://github.com/JonathanSaliba" target ="_blank" class="footer__social">
-                           <i class="uil uil-github"></i>
-                        </a>
-                    </div>
-                </div>
-   
-                <p class="footer__copy">&#169; Jonathan All Rights Reserved</p>
-            </div>
-           </footer>
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+         <div class="footer__bg">
+             <div class="footer__container container grid">
+                 <div>
+                     <h1 class="footer__title">Jonathan</h1>
+                     <span class="footer__subtitle">UX/UI Designer</span>
+                 </div>
 
+                 <ul class="footer__links">
+                     <li>
+                         <a href="#services" class="footer__link">Services</a>
+                     </li>
+                     <li>
+                        <a href="#portfolio" class="footer__link">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer__link">Contact Me</a>
+                    </li>
+                 </ul>
+
+                 <div class="footer__socials">
+                     <a href="https://www.instagram.com/raiajms/?hl=en" target ="_blank" class="footer__social">
+                        <i class="uil uil-instagram"></i>
+                     </a>
+
+                     <a href="https://www.linkedin.com/in/jonathan-saliba-5987ba149/" target ="_blank" class="footer__social">
+                        <i class="uil uil-linkedin"></i>
+                     </a>
+
+                     <a href="https://github.com/JonathanSaliba" target ="_blank" class="footer__social">
+                        <i class="uil uil-github"></i>
+                     </a>
+                 </div>
+             </div>
+
+             <p class="footer__copy">&#169; Jonathan All Rights Reserved</p>
+         </div>
+        </footer>
+        
         <!--==================== SCROLL TOP ====================-->
         <a href="#" class="scrollup" id="scroll-up">
-        <i class="uil uil-arrow-up scrollup__icon"></i>
+            <i class="uil uil-arrow-up scrollup__icon"></i>
         </a>
 
         <!--==================== SWIPER JS ====================-->
         <script src="assets/js/swiper-bundle.min.js"></script>
 
         <!--==================== MAIN JS ====================-->
-        <script src="assets/js/cmain.js"></script>
-
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+        <script src="assets/js/main.js"></script>
     </body>
 </html>
